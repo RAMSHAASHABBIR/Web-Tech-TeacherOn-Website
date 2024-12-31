@@ -54,9 +54,8 @@ function Popup({onClose, subject, allSubject}) {
           {details && (
             <div className='flex flex-col justify-center p-5 text-1xl gap-4'>
               <p>Teacher : <span className='text-white'>{details.Firstname} {details.Lastname}</span></p>
-              {/* <p>Teacher : <span className='text-white'>{details.Firstname} {details.Lastname}</span> {'⭐'.repeat(starCount)}</p> */}
               <p>Email : <span className='text-white'>{details.Email}</span></p>
-              {/* <p>Course Duration : <span className='text-white'>6 Months</span></p> */}
+              
               <p>Fees : <span className='text-white'>Rs. {price[subject.coursename]} per month / per student</span></p>
             </div>
           )}

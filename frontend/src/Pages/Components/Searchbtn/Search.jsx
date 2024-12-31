@@ -82,7 +82,7 @@ function Search() {
     const response = await Data.json();
     if (response.statusCode === 200) {
       setCourse(response.data);
-      // console.log(response.data);
+
     }
     setData("");
   };

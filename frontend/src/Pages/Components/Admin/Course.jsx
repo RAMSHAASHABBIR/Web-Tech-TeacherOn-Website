@@ -10,24 +10,6 @@ const Course = () => {
   const { data } = useParams();
   const navigator = useNavigate();
 
-
-    // useEffect((data)=>{
-    //     const Postrequest=async()=>{
-    //         try{
-    //          const response=await axios.post(`api/admin/${data}/approve/student/:studentID`)
-    //         //  console.log(response);
-    //      }catch(error){
-    //         console.error('Error fetching course requests:', error);
-    //      }
-    //     }
-    //     Postrequest();
-    // },[])
- 
-
-
-
-
-
   const formatDay = (day) => {
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     return daysOfWeek[day];
@@ -55,32 +37,6 @@ const Course = () => {
     fetchCourseRequests();
   }, [data]);
 
-
-  // const handleAccept = async (id,info) => {
-  //   console.log(id);
-  //   try {
-  //     const response = await fetch(`/api/admin/${data}/approve/course/${id}`, {
-  //       method: 'POST',
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ 
-  //             Isapproved: true,
-  //              Email:info.Email,
-  //              Firstname:info.enrolledteacher,
-  //        }),
-  //     });
-      
-  //     console.log(response);
-   
-  //     if (response.ok) {
-  //       setCourseReq(courseReq.filter(req => req._id !== id));
-        
-  //     }
-  //   } catch (error) {
-  //     console.error('Error approving course request:', error);
-  //   }
-  // };
   const handleAccept = async (id, info) => {
     console.log(id);
     console.log(info.Email)
@@ -131,27 +87,6 @@ const Course = () => {
     }
   };
 
-  // const handleReject = async (id,info) => {
-  //   console.log(id,info);
-  //   try {
-  //     const response = await fetch(`/api/admin/${data}/approve/course/${id}`, {
-  //       method: 'POST',
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ Isapproved: false,
-  //              Email:info.Email,
-  //              Firstname:info.enrolledteacher,
-  //        }),
-  //     });
-  //    console.log(response);
-  //     if (response.ok) {
-  //       setCourseReq(courseReq.filter(req => req._id !== id));
-  //     }
-  //   } catch (error) {
-  //     console.error('Error rejecting course request:', error);
-  //   }
-  // };
 
 
 

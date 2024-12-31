@@ -115,26 +115,9 @@ function VarifyDoc() {
                     </div>
 
                     <div className='flex mt-10 justify-center gap-20 flex-wrap text-gray-200 font-bold'>
-                        <div className='m-5 flex flex-col gap-3'>
-                            <img src={data.teacherDocs.Secondary} alt="Secondary" width={500}/>
-                            <p>10th Marksheet  <span className='text-[#8DE855]'>: {data.teacherDocs.SecondaryMarks}%</span></p>
-                        </div>
-                        <div className='m-5 flex flex-col gap-3'>
-                            <img src={data.teacherDocs.Higher} alt="Secondary" width={500}/>
-                            <p>12th Marksheet  <span className='text-[#8DE855]'>: {data.teacherDocs.HigherMarks}%</span></p>
-                        </div>
-                        <div className='m-5 flex flex-col gap-3'>
-                            <img src={data.teacherDocs.UG} alt="Secondary" width={500}/>
-                            <p>U.G. Marksheet  <span className='text-[#8DE855]'>: {data.teacherDocs.UGmarks}</span></p>
-                        </div>
-                        <div className='m-5 flex flex-col gap-3'>
-                            <img src={data.teacherDocs.PG} alt="Secondary" width={500}/>
-                            <p>P.G. Marksheet  <span className='text-[#8DE855]'>: {data.teacherDocs.PGmarks}</span></p>
-                        </div>
-                        <div className='m-5 flex flex-col gap-3'>
-                            <img src={data.teacherDocs.Aadhaar} alt="Secondary" width={500}/>
-                            <p>Aadhar Card </p>
-                        </div>
+
+
+
                         <div className='flex items-end mb-10 flex-col gap-10'>
                             <textarea value={value} onChange={handleMessage} className='w-96 h-60 mt-6 text-black p-5' placeholder='Write reason for rejecting application ...'/>
 
